@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.polsl.scheduleproject.AddingController">
+   <children>
+      <Label layoutX="191.0" layoutY="44.0" text="Add new activity">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="203.0" text="Enter the name of an activity:" />
+      <TextField fx:id="activityName" layoutX="35.0" layoutY="220.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="37.0" layoutY="257.0" prefHeight="17.0" prefWidth="200.0" text="Enter the date (day | month | year):" />
+      <TextField fx:id="vehicleRegNumb" layoutX="35.0" layoutY="332.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="35.0" layoutY="315.0" text="Enter vehicle's registration number:" />
+      <Label layoutX="35.0" layoutY="364.0" text="Enter vehicle's model:" />
+      <TextField fx:id="vehicleModel" layoutX="35.0" layoutY="381.0" prefHeight="25.0" prefWidth="195.0" />
+      <TextField fx:id="vehicleYear" layoutX="35.0" layoutY="436.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="35.0" layoutY="419.0" text="Enter vehicle's year of production:" />
+      <Label layoutX="411.0" layoutY="136.0" text="Enter client data">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="368.0" layoutY="166.0" prefWidth="200.0" />
+      <Label layoutX="74.0" layoutY="136.0" text="Enter activity data">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="37.0" layoutY="164.0" prefWidth="200.0" />
+      <Label layoutX="372.0" layoutY="203.0" text="Enter name:" />
+      <TextField fx:id="clientName" layoutX="371.0" layoutY="220.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="372.0" layoutY="309.0" text="Enter phone number:" />
+      <TextField fx:id="clientSurname" layoutX="373.0" layoutY="274.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="372.0" layoutY="257.0" text="Enter surname:" />
+      <TextField fx:id="clientNumber" layoutX="373.0" layoutY="326.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="372.0" layoutY="364.0" text="Enter address:" />
+      <TextField fx:id="clientAddress" layoutX="371.0" layoutY="381.0" prefHeight="25.0" prefWidth="195.0" />
+      <Separator layoutX="298.0" layoutY="191.0" orientation="VERTICAL" prefHeight="270.0" prefWidth="3.0" />
+      <Button fx:id="backButton" layoutX="495.0" layoutY="496.0" mnemonicParsing="false" onAction="#switchToSceneFirst" prefHeight="25.0" prefWidth="62.0" text="Back" />
+      <Button fx:id="finalizeButton" layoutX="418.0" layoutY="496.0" mnemonicParsing="false" onAction="#finalize" prefHeight="25.0" prefWidth="62.0" text="Finalize" />
+      <Button fx:id="acceptButton" layoutX="458.0" layoutY="436.0" mnemonicParsing="false" onAction="#accept" text="Accept" />
+      <TextField fx:id="day" layoutX="47.0" layoutY="280.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="month" layoutX="91.0" layoutY="280.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="year" layoutX="137.0" layoutY="280.0" prefHeight="25.0" prefWidth="62.0" />
+      <Separator layoutX="85.0" layoutY="278.0" orientation="VERTICAL" prefHeight="32.0" prefWidth="6.0" />
+      <Separator layoutX="130.0" layoutY="278.0" orientation="VERTICAL" prefHeight="32.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>
