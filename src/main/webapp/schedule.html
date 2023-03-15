@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Mechanic Schedule</title>
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <link rel="stylesheet" href="css/main.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>  
+        <h1>Mechanic schedule</h1>
+        
+        <nav class ="navigation-bar">
+            <a href="/Matysek.Dominik.cw4.prototyp/addActivity.html"><button>ADD ACTIVITY</button></a> 
+        </nav>
+        
+        <form action="cookies">
+            <input type="submit" value="SEE COOKIES" />
+        </form>
+        <br />
+        <label for="activityName">Search activity by name: </label>
+        <input type="text" id="activityName" name="activityName"/>         
+        <input type="button" id="searchActivity" value="SHOW" onClick="getSchedule('activityName', 'tableSchedule');" />
+        
+        <br />
+        <br />
+        
+        <table class="tableActivities">
+            <thead>                
+                <tr>
+                    <th>Activity name</th>
+                    <th>Date</th>
+                    <th>Client name</th>
+                    <th>Client surname</th>
+                    <th>Client address</th>
+                    <th>Client phone</th>
+                    <th>Vehicle model</th>
+                    <th>Vehicle registration number</th>
+                    <th>Vehicle year of production</th>
+                </tr>
+            </thead>            
+            <tbody id="tableSchedule">
+            </tbody>            
+        </table>
+        
+    </body>
+</html>

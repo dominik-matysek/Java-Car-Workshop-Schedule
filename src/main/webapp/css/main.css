@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+
+table, td, th, tr {
+    border-collapse: collapse;
+    border: 1px black solid;
+    padding: 5px;
+    text-align: center;
+}
+
+.navigation-bar {
+
+}
+
+#activityName {
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add activity</title>
+        <link rel="stylesheet" href="css/main.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class ="navigation-bar">
+            <a href="/Matysek.Dominik.cw4.prototyp/schedule.html">
+                <button>Back to schedule</button>
+            </a> 
+        </nav>
+        <h1>Add activity</h1>
+<!--        <form id ="addActivities" action="addActivity" method="GET">-->
+<!--        <form action="addActivity"  method="post" >-->
+        <form action="addActivity" >
+            <fieldset>
+                <legend>Activity details: </legend>
+                <label for="activityName">Activity name: </label>
+                <input type="text" id="activityName" name="activityName" required><br /><br />
+                <label for="year">Year: </label>
+                <input type="text" id="year" name="year" required><br /><br />
+                <label for="month">Month: </label>
+                <input type="text" id="month" name="month" required><br /><br />
+                <label for="day">Day: </label>
+                <input type="text" id="day" name="day" required>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Vehicle details: </legend>
+                <label for="registration_number">Vehicle regstration number:</label>
+                <input type="text" id="registration_number" name="registration_number" required><br /><br />
+                <label for="model">Vehicle model: </label>
+                <input type="text" id="model" name="model" required><br /><br />
+                <label for="production_year">Vehicle year of production: </label>
+                <input type="text" id="production_year" name="production_year" required>
+            </fieldset>  
+            <br />
+            <fieldset>
+                <legend>Client details: </legend>
+                <label for="name">Client name: </label>
+                <input type="text" id="name" name="name" required><br /><br />
+                <label for="surname">Client surname: </label>
+                <input type="text" id="surname" name="surname" required><br /><br />
+                <label for="phone_number">Client phone number: </label>
+                <input type="text" id="phone_number" name="phone_number" required><br /><br />
+                <label for="address">Client address: </label>
+                <input type="text" id="address" name="address" required>
+            </fieldset>
+
+            <br />
+            <input type="submit" id="addActivity" class="addActivity" value ="ADD ACTIVITY"/>
+            <input type="reset" value ="CLEAR"/>
+<!--            <button id="submit-activity" type="submit">Add activity</button>-->
+<!--            <input type="button" id="add-activity" value="Add activity" onClick="getSchedule('activityName', 'tableSchedule');" />-->
+            <br /><br />
+        </form>
+    </body>
+</html>
